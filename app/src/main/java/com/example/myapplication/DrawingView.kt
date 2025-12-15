@@ -84,7 +84,7 @@ class DrawingView(context: Context) : View(context) {
 
     // Method to change brush color dynamically
     fun setColor(newColor: String) {
-        invalidate()
         drawPaint.color = Color.parseColor(newColor)
+        invalidate()
     }
 }
